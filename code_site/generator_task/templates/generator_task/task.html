@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+</head>
+<body>
+    <h1>task page 1</h1>
+    {% for b in tasks %}
+    <div>
+        <h2>{{ b.title }}</h2>
+        <p>{{ b.content }}</p>
+        <p>{{ b.date_posted | date:"d.m.Y H:i:s" }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
